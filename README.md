@@ -65,11 +65,11 @@ The notebook walks through:
 NeuroGate_EEG_Classification/
 |-- neurogate_eeg
 |   |-- datasets
+|   |   |-- __init__.py
 |   |   |-- channels.py
 |   |   |-- dataset.py
 |   |   |-- defaults.py
 |   |   |-- getfiles.py
-|   |   |-- __init__.py
 |   |   |-- pipeline.py
 |   |   |-- pytordataset.py
 |   |   `-- sc_pipeline.py
@@ -77,8 +77,8 @@ NeuroGate_EEG_Classification/
 |   |   |-- __init__.py
 |   |   `-- neurogate.py
 |   |-- train
-|   |   |-- callbacks.py
 |   |   |-- __init__.py
+|   |   |-- callbacks.py
 |   |   |-- misc.py
 |   |   |-- retrieve.py
 |   |   |-- store.py
