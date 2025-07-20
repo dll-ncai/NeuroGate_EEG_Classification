@@ -1,4 +1,4 @@
-**EEG Classification with NeuroGATE**
+# EEG Classification with NeuroGATE
 
 This repository contains code to run and evaluate the NeuroGATE deep learning model on EEG data. It provides all necessary data loaders, preprocessing pipelines, model definition, training utilities, and an example notebook demonstrating a complete experiment.
 
