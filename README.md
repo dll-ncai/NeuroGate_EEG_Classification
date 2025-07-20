@@ -32,7 +32,7 @@ This package is intended for local development and testing. To install:
 git clone https://github.com/dll-ncai/NeuroGate_EEG_Classification.git
 cd NeuroGate_EEG_Classification
 
-# (Optional) create and activate a virtual environment
+# create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate   # macOS/Linux
 venv\\Scripts\\activate  # Windows

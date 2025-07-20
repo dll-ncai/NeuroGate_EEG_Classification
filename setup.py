@@ -6,7 +6,7 @@ setup(
     description="Run and evaluate the NeuroGATE EEG model.",
     packages=find_packages(),
     install_requires=[
-        "numpy", "pandas", "torch", "mne", "scikit-learn", "tqdm", "matplotlib"
+        "numpy", "pandas", "torch", "mne", "scikit-learn", "tqdm", "matplotlib", "torchmetrics", "ipywidgets"
     ],
 )
 

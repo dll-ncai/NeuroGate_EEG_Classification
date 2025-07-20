@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 import torch.nn as nn
 import torch
-from train.callbacks import History
+from .callbacks import History
 
 # We will start by saving the model
 def save_model(model, path):

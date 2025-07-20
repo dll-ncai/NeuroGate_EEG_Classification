@@ -1,11 +1,11 @@
 import os
 import torch
-from train.train import train
-from datasets.dataset import Dataset
+from .train import train
+from neurogate_eeg.datasets.dataset import Dataset
 from torch.utils.data import DataLoader
-from datasets.pytordataset import KFoldDataset, EEGDataset
-from train.misc import get_model_size
-from train.store import update_csv
+from neurogate_eeg.datasets.pytordataset import KFoldDataset, EEGDataset
+from .misc import get_model_size
+from .store import update_csv
 import numpy as np
 import pandas as pd
 

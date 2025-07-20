@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from train.callbacks import History, Metrics, def_metrics
+from .callbacks import History, Metrics, def_metrics
 import numpy as np
 
 class EarlyStopping:

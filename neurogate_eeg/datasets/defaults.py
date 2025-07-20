@@ -1,5 +1,5 @@
-from datasets.sc_pipeline import get_scratch_pl
-from datasets.sc_pipeline import get_scratch_updated_pl
+from .sc_pipeline import get_scratch_pl
+from .sc_pipeline import get_scratch_updated_pl
 
 import numpy as np
 
