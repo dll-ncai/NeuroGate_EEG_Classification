@@ -102,4 +102,5 @@ NeuroGate_EEG_Classification/
 * scikit-learn
 * tqdm
 * matplotlib
-
+* torchmetrics
+* ipywidgets
