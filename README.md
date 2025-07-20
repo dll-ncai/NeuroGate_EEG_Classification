@@ -63,28 +63,31 @@ The notebook walks through:
 
 ```plaintext
 NeuroGate_EEG_Classification/
-|-- datasets
-|   |-- channels.py
-|   |-- dataset.py
-|   |-- defaults.py
-|   |-- getfiles.py
-|   |-- __init__.py
-|   |-- pipeline.py
-|   |-- pytordataset.py
-|   `-- sc_pipeline.py
-|-- models
-|   |-- __init__.py
-|   `-- neurogate.py
-|-- train
-|   |-- callbacks.py
-|   |-- __init__.py
-|   |-- misc.py
-|   |-- retrieve.py
-|   |-- store.py
-|   |-- train.py
-|   `-- xloop.py
+|-- neurogate_eeg
+|   |-- datasets
+|   |   |-- channels.py
+|   |   |-- dataset.py
+|   |   |-- defaults.py
+|   |   |-- getfiles.py
+|   |   |-- __init__.py
+|   |   |-- pipeline.py
+|   |   |-- pytordataset.py
+|   |   `-- sc_pipeline.py
+|   |-- models
+|   |   |-- __init__.py
+|   |   `-- neurogate.py
+|   |-- train
+|   |   |-- callbacks.py
+|   |   |-- __init__.py
+|   |   |-- misc.py
+|   |   |-- retrieve.py
+|   |   |-- store.py
+|   |   |-- train.py
+|   |   `-- xloop.py
+|   `-- __init__.py
 |-- example.ipynb
-`-- README.md
+|-- README.md
+`-- setup.py
 ```
 
 ---
