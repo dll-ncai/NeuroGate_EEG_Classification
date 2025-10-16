@@ -32,11 +32,8 @@ This package is intended for local development and testing. To install:
 # Clone the repository
 git clone --recurse-submodules https://github.com/dll-ncai/NeuroGate_EEG_Classification.git
 cd NeuroGate_EEG_Classification
-```
 
-If you already cloned the repository without the flag, you can initialize the submodule manually:
-
-```bash
+#If you already cloned the repository without the flag, you can initialize the submodule manually:
 git submodule update --init --recursive
 
 # create and activate a virtual environment
