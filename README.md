@@ -1,6 +1,7 @@
 # EEG Classification with NeuroGATE
 
-This repository contains code to run and evaluate the NeuroGATE deep learning model on EEG data. It provides all necessary data loaders, preprocessing pipelines, model definition, training utilities, and an example notebook demonstrating a complete experiment.
+This repository provides a PyTorch implementation of the NeuroGATE deep learning model for EEG classification. It utilizes the CereProcess library for data loading, preprocessing, model training, and evaluation, demonstrated in a comprehensive example notebook.
+
 
 ---
 
@@ -29,16 +30,23 @@ This package is intended for local development and testing. To install:
 
 ```bash
 # Clone the repository
-git clone https://github.com/dll-ncai/NeuroGate_EEG_Classification.git
+git clone --recurse-submodules https://github.com/dll-ncai/NeuroGate_EEG_Classification.git
 cd NeuroGate_EEG_Classification
+```
+
+If you already cloned the repository without the flag, you can initialize the submodule manually:
+
+```bash
+git submodule update --init --recursive
 
 # create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate   # macOS/Linux
 venv\\Scripts\\activate  # Windows
 
-# Install in editable mode
-pip install -e .
+# Install requirements
+cd cereprocess
+pip install -r requirements.txt
 ```
 
 ---
@@ -63,31 +71,12 @@ The notebook walks through:
 
 ```plaintext
 NeuroGate_EEG_Classification/
-|-- neurogate_eeg
-|   |-- datasets
-|   |   |-- __init__.py
-|   |   |-- channels.py
-|   |   |-- dataset.py
-|   |   |-- defaults.py
-|   |   |-- getfiles.py
-|   |   |-- pipeline.py
-|   |   |-- pytordataset.py
-|   |   `-- sc_pipeline.py
-|   |-- models
-|   |   |-- __init__.py
-|   |   `-- neurogate.py
-|   |-- train
-|   |   |-- __init__.py
-|   |   |-- callbacks.py
-|   |   |-- misc.py
-|   |   |-- retrieve.py
-|   |   |-- store.py
-|   |   |-- train.py
-|   |   `-- xloop.py
-|   `-- __init__.py
+|-- cereprocess/          # Git submodule for utilities
+|-- models
+|   |-- __init__.py
+|   `-- neurogate.py
 |-- example.ipynb
 |-- README.md
-`-- setup.py
 ```
 
 ---
